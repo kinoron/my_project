@@ -63,7 +63,7 @@ class Player(BasePlayer):
 ####funcions
 
 def creating_session(subsession: Subsession):
-    # subsession.group_randomly()  # プレイヤーをランダムにグループ分け
+    subsession.group_randomly()  # プレイヤーをランダムにグループ分け
     # セッション開始時に、グループごとに条件を割り当てる（例：ランダムに半々）
     import random
     for group in subsession.get_groups():
